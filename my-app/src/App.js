@@ -7,7 +7,46 @@ function App() {
       <div className="main-app">
         <header className="App-header">
           <section id="title"></section>
-          {/*-- Nav Bar */}
+          <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+            <a class="navbar-brand" href="">
+              Website
+            </a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarTogglerDemo02"
+              aria-controls="navbarTogglerDemo02"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class=" collaps navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="">
+                    {" "}
+                    Contact
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">
+                    {" "}
+                    Pricing
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">
+                    {" "}
+                    Download
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
 
           {/*-- Title */}
 
@@ -41,7 +80,7 @@ function App() {
               I no longer have to sniff other dogs for love. I've found the
               hottest Corgi on TinDog. Woof.
             </h2>
-            <img src="images/dog-img.jpg" alt="dog-profile" />
+            <img src="./images/dog-img.jpg" alt="dog-profile" />
             <em>Pebbles, New York</em>
           </section>
 
@@ -52,10 +91,10 @@ function App() {
           {/*-- Press */}
 
           <section id="press">
-            <img src="images/techcrunch.png" alt="tc-logo" />
-            <img src="images/tnw.png" alt="tnw-logo" />
-            <img src="images/bizinsider.png" alt="biz-insider-logo" />
-            <img src="images/mashable.png" alt="mashable-logo" />
+            <img src="./images/techcrunch.png" alt="tc-logo" />
+            <img src="./images/tnw.png" alt="tnw-logo" />
+            <img src="./images/bizinsider.png" alt="biz-insider-logo" />
+            <img src="./images/mashable.png" alt="mashable-logo" />
           </section>
 
           {/* Pricing */}
