@@ -6,58 +6,66 @@ function App() {
     <div className="App">
       <div className="main-app">
         <header className="App-header">
-          <section id="title"></section>
-          <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
-            <a class="navbar-brand" href="">
-              Website
-            </a>
+          <section id="title">
+            <nav class="navbar navbar-expand-xl navbar-dark">
+              <a class="navbar-brand" href="">
+                Website
+              </a>
 
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarTogglerDemo02"
-              aria-controls="navbarTogglerDemo02"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-            <div class=" collaps navbar-collapse" id="navbarTogglerDemo02">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="">
-                    {" "}
-                    Contact
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="">
-                    {" "}
-                    Pricing
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="">
-                    {" "}
-                    Download
-                  </a>
-                </li>
-              </ul>
+              <div class=" collaps navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="">
+                      {" "}
+                      Contact
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">
+                      {" "}
+                      Pricing
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">
+                      {" "}
+                      Download
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+
+            {/*-- Title */}
+
+            <div class="row">
+              
+              
+                <h1>Meet new and interesting dogs nearby.</h1>
+                <button type="button">Download</button>  
+                <button type="button">Download</button>
+              
+
+              
+                <img src="./images/iphone6.png" alt="iphone-mockup" />
+               
+
             </div>
-          </nav>
 
-          {/*-- Title */}
-
-          <div>
-            <h1>Meet new and interesting dogs nearby.</h1>
-            <button type="button">Download</button>
-            <button type="button">Download</button>
-          </div>
-          <div>
-            <img src="./images/iphone6.png" alt="iphone-mockup" />
-          </div>
+            <div />
+            <section />
           <section />
 
           {/*-- Features */}
