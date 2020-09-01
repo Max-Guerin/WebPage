@@ -6,14 +6,14 @@ function App() {
     <div className="App">
       <div className="main-app">
         <header className="App-header">
-          <section id="title">
-            <nav class="navbar navbar-expand-xl navbar-dark">
-              <a class="navbar-brand" href="">
+          <section id="navbar">
+            <nav className="navbar navbar-expand-xl navbar-dark">
+              <a className="navbar-brand" href="">
                 Website
               </a>
 
               <button
-                class="navbar-toggler"
+                className="navbar-toggler"
                 type="button"
                 data-toggle="collapse"
                 data-target="#navbarTogglerDemo02"
@@ -21,25 +21,27 @@ function App() {
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span class="navbar-toggler-icon"></span>
+                <span className="navbar-toggler-icon"></span>
               </button>
 
-              <div class=" collaps navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="">
+              <div
+                className=" collapse navbar-collapse"
+                id="navbarTogglerDemo02">
+                <ul className="navbar-nav ml-auto">
+                  <li className="nav-item">
+                    <a className="nav-link" href="">
                       {" "}
                       Contact
                     </a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="">
+                  <li className="nav-item">
+                    <a className="nav-link" href="">
                       {" "}
                       Pricing
                     </a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="">
+                  <li className="nav-item">
+                    <a className="nav-link" href="">
                       {" "}
                       Download
                     </a>
@@ -47,25 +49,30 @@ function App() {
                 </ul>
               </div>
             </nav>
+          </section>
+        </header>
 
-            {/*-- Title */}
+        {/*-- Title */}
+        <div className="main-body">
+          <section id="title">
 
-            <div class="row">
-              
-              
+            <div className="row">
+              <div className="col-lg-6">
                 <h1>Meet new and interesting dogs nearby.</h1>
-                <button type="button">Download</button>  
                 <button type="button">Download</button>
-              
+                <button type="button">Download</button>
+              </div>
 
-              
+              <div className="row">
+              <div className="col-lg-6">
                 <img src="./images/iphone6.png" alt="iphone-mockup" />
-               
-
+              </div>
+            </div>
             </div>
 
-            <div />
-            <section />
+           
+
+          </section>
           <section />
 
           {/*-- Features */}
@@ -92,8 +99,8 @@ function App() {
             <em>Pebbles, New York</em>
           </section>
 
-          {/*-- <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
-            <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+          {/*-- <h2 className="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+            <img className="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
             <em>Beverly, Illinois</em> */}
 
           {/*-- Press */}
@@ -141,13 +148,12 @@ function App() {
             <button type="button">Download</button>
             <button type="button">Download</button>
           </section>
+        </div>
+        {/* Footer */}
 
-          {/* Footer */}
-
-          <footer id="footer">
-            <p>© Copyright 2018 TinDog</p>
-          </footer>
-        </header>
+        <footer id="footer">
+          <p>© Copyright 2018 TinDog</p>
+        </footer>
       </div>
     </div>
   );

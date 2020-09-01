@@ -1,3 +1,13 @@
+#navbar {
+  background-color: #ff4c68;
+}
+
 #title {
   background-color: #ff4c68;
+}
+
+h1 {
+  font-family: 'Montserrat';
+  font-size: 3rem;
+  line-height: 1.5;
 }
