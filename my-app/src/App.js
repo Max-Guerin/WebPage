@@ -50,7 +50,7 @@ function App() {
           </header>
 
           {/*-- Title */}
-
+        <div className="main-body">
           <div>
             <h1>Meet new and interesting dogs nearby.</h1>
             <button type="button">Download</button>
@@ -134,7 +134,7 @@ function App() {
             <button type="button">Download</button>
             <button type="button">Download</button>
           </section>
-
+          </div>
           {/* Footer */}
 
           <footer id="footer">
