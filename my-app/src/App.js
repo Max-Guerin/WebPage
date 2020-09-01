@@ -47,6 +47,7 @@ function App() {
               </ul>
             </div>
           </nav>
+          </header>
 
           {/*-- Title */}
 
@@ -139,7 +140,6 @@ function App() {
           <footer id="footer">
             <p>© Copyright 2018 TinDog</p>
           </footer>
-        </header>
       </div>
     </div>
   );
