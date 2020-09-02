@@ -1,13 +1,49 @@
 #navbar {
-  background-color: #ff4c68;
+  background-color: #f34a63;
 }
 
 #title {
-  background-color: #ff4c68;
+  background-color: #ff4c68;   
+  padding-top: 5%;
+}
+
+.navbar {
+  padding: 0;
+}
+.navbar-brand {
+  font-size: 2rem;
+}
+
+.navbar-nav {
+  margin-right: 5%;
+}
+
+.nav-item {
+  font-size: 1.7rem;
+  margin: 20px;
 }
 
 h1 {
   font-family: 'Montserrat';
-  font-size: 3rem;
+  font-size: 5rem;
   line-height: 1.5;
+  color: white;
+}
+
+.container-fluid {
+  padding: 2% 12%;
+}
+
+.dl-button {
+  margin: 5% 8% 5% 0;
+  
+}
+
+.title-img {  
+  width: 80%;
+}
+
+.rotated {
+  transform: rotate(30deg);
+  margin-left: 16rem;
 }

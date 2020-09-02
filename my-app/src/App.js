@@ -7,6 +7,7 @@ function App() {
       <div className="main-app">
         <header className="App-header">
           <section id="navbar">
+            <div className="container-fluid">
             <nav className="navbar navbar-expand-xl navbar-dark">
               <a className="navbar-brand" href="">
                 Website
@@ -26,7 +27,8 @@ function App() {
 
               <div
                 className=" collapse navbar-collapse"
-                id="navbarTogglerDemo02">
+                id="navbarTogglerDemo02"
+              >
                 <ul className="navbar-nav ml-auto">
                   <li className="nav-item">
                     <a className="nav-link" href="">
@@ -49,29 +51,28 @@ function App() {
                 </ul>
               </div>
             </nav>
+            </div>
           </section>
         </header>
 
         {/*-- Title */}
         <div className="main-body">
           <section id="title">
-
+          <div className="container-fluid">
             <div className="row">
               <div className="col-lg-6">
                 <h1>Meet new and interesting dogs nearby.</h1>
-                <button type="button">Download</button>
-                <button type="button">Download</button>
+                <button type="button" className="btn btn-lg btn-dark dl-button"><i class="fab fa-apple"></i> Download</button>
+                <button type="button" className="btn btn-lg btn-outline-light dl-button"><i class="fab fa-google-play"></i> Download</button>
               </div>
 
               <div className="row">
-              <div className="col-lg-6">
-                <img src="./images/iphone6.png" alt="iphone-mockup" />
+                <div className="col-lg-6">
+                  <img className="rotated title-img" src="./images/iphone6.png" alt="iphone-mockup" />
+                </div>
               </div>
             </div>
             </div>
-
-           
-
           </section>
           <section />
 
