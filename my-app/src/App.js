@@ -8,49 +8,49 @@ function App() {
         <header className="App-header">
           <section id="navbar">
             <div className="container-fluid">
-            <nav className="navbar navbar-expand-xl navbar-dark">
-              <a className="navbar-brand" href="">
-                Website
-              </a>
+              <nav className="navbar navbar-expand-xl navbar-dark">
+                <a className="navbar-brand" href="">
+                  Website
+                </a>
 
-              <button
-                className="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="navbar-toggler-icon"></span>
-              </button>
+                <button
+                  className="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarTogglerDemo02"
+                  aria-controls="navbarTogglerDemo02"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span className="navbar-toggler-icon"></span>
+                </button>
 
-              <div
-                className=" collapse navbar-collapse"
-                id="navbarTogglerDemo02"
-              >
-                <ul className="navbar-nav ml-auto">
-                  <li className="nav-item">
-                    <a className="nav-link" href="">
-                      {" "}
-                      Contact
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="">
-                      {" "}
-                      Pricing
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="">
-                      {" "}
-                      Download
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
+                <div
+                  className=" collapse navbar-collapse"
+                  id="navbarTogglerDemo02"
+                >
+                  <ul className="navbar-nav ml-auto">
+                    <li className="nav-item">
+                      <a className="nav-link" href="">
+                        {" "}
+                        Contact
+                      </a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="">
+                        {" "}
+                        Pricing
+                      </a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="">
+                        {" "}
+                        Download
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
             </div>
           </section>
         </header>
@@ -58,20 +58,34 @@ function App() {
         {/*-- Title */}
         <div className="main-body">
           <section id="title">
-          <div className="container-fluid">
-            <div className="row">
-              <div className="col-lg-6">
-                <h1>Meet new and interesting dogs nearby.</h1>
-                <button type="button" className="btn btn-lg btn-dark dl-button"><i class="fab fa-apple"></i> Download</button>
-                <button type="button" className="btn btn-lg btn-outline-light dl-button"><i class="fab fa-google-play"></i> Download</button>
-              </div>
-
+            <div className="container-fluid">
               <div className="row">
                 <div className="col-lg-6">
-                  <img className="rotated title-img" src="./images/iphone6.png" alt="iphone-mockup" />
+                  <h1>Meet new and interesting dogs nearby.</h1>
+                  <button
+                    type="button"
+                    className="btn btn-lg btn-dark dl-button"
+                  >
+                  <i className="fab fa-apple"></i> Download
+                  </button>
+                  <button
+                    type="button"
+                    className="btn btn-lg btn-outline-light dl-button"
+                  >
+                    <i class="fab fa-google-play"></i> Download
+                  </button>
+                </div>
+
+                <div className="row">
+                  <div className="col-lg-6">
+                    <img
+                      className="rotated title-img"
+                      src="./images/iphone6.png"
+                      alt="iphone-mockup"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
             </div>
           </section>
           <section />
@@ -79,14 +93,27 @@ function App() {
           {/*-- Features */}
 
           <section id="features">
-            <h3>Easy to use.</h3>
-            <p>So easy to use, even your dog could do it.</p>
+            <div className="container-fluid">
+              <div className="row">
+                <div className="col-lg-4">
+                  <i class="feature-icon fas fa-check-circle fa-5x"></i>
+                  <h3>Easy to use.</h3>
+                  <p>So easy to use, even your dog could do it.</p>
+                </div>
 
-            <h3>Elite Clientele</h3>
-            <p>We have all the dogs, the greatest dogs.</p>
+                <div className="col-lg-4">
+                  <i className="feature-icon fas fa-bullseye fa-5x"></i>
+                  <h3>Elite Clientele</h3>
+                  <p>We have all the dogs, the greatest dogs.</p>
+                </div>
 
-            <h3>Guaranteed to work.</h3>
-            <p>Find the love of your dog's life or your money back.</p>
+                <div className="col-lg-4">
+                  <i className="feature-icon fas fa-heart fa-5x"></i>
+                  <h3>Guaranteed to work.</h3>
+                  <p>Find the love of your dog's life or your money back.</p>
+                </div>
+              </div>
+            </div>
           </section>
 
           {/*-- Testimonials */}
