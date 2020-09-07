@@ -31,19 +31,19 @@ function App() {
                 >
                   <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
-                      <a className="nav-link" href="">
+                      <a className="nav-link" href="#footer">
                         {" "}
                         Contact
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="">
+                      <a className="nav-link" href="#pricing">
                         {" "}
                         Pricing
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="">
+                      <a className="nav-link" href="#cta">
                         {" "}
                         Download
                       </a>
@@ -208,7 +208,12 @@ function App() {
                     <p>10 Messages Per Day</p>
                     <p>Unlimited App Usage</p>
                     <div className="btn-layout">
-                    <button type="button" className="btn btn-outline-dark btn-lg btn-block">Sign Up</button>
+                      <button
+                        type="button"
+                        className="btn btn-outline-dark btn-lg btn-block"
+                      >
+                        Sign Up
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -224,7 +229,12 @@ function App() {
                     <p>10 Messages Per Day</p>
                     <p>Unlimited App Usage</p>
                     <div className="btn-layout">
-                    <button type="button" className="btn btn-dark btn-lg btn-block">Sign Up</button>
+                      <button
+                        type="button"
+                        className="btn btn-dark btn-lg btn-block"
+                      >
+                        Sign Up
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -241,7 +251,12 @@ function App() {
                     <p>Unlimited Messages</p>
                     <p>Unlimited App Usage</p>
                     <div className="btn-layout">
-                    <button type="button" className="btn btn-dark btn-lg btn-block">Sign Up</button>
+                      <button
+                        type="button"
+                        className="btn btn-dark btn-lg btn-block"
+                      >
+                        Sign Up
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -252,14 +267,26 @@ function App() {
           {/* Call to Action */}
 
           <section id="cta">
-            <h3>Find the True Love of Your Dog's Life Today.</h3>
-            <button type="button">Download</button>
-            <button type="button">Download</button>
+            <h3 className="cta-p">
+              Find the True Love of Your Dog's Life Today.
+            </h3>
+            <button className="dl-btn btn bt-lg btn-dark" type="button">
+              <i className="fab fa-apple"></i> Download
+            </button>
+            <button className="dl-btn btn bt-lg btn-light" type="button">
+              <i className="fab fa-google-play"></i> Download
+            </button>
           </section>
         </div>
         {/* Footer */}
 
         <footer id="footer">
+          <p>
+            <i class="fab fa-twitter ft-icon"></i>{" "}
+            <i class="fab fa-facebook-f ft-icon"></i>{" "}
+            <i class="fab fa-instagram-square ft-icon"></i>{" "}
+            <i class="fas fa-envelope ft-icon"></i>
+          </p>
           <p>© Copyright 2018 TinDog</p>
         </footer>
       </div>

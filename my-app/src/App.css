@@ -42,7 +42,8 @@ h2 {
 
 h3 {
   font-family: 'Montserrat';
-  font-size: 35px;
+  font-size: 40px;
+  padding: 2%;
 }
 
 p {
@@ -151,5 +152,27 @@ p {
 /*-- Call to Action */
 
 #cta {
-  
+  background-color: #ff4c68;
+  text-align: center;
+  padding: 9%;
+}
+.dl-btn {
+  margin: 2% 3% 1%;
+}
+
+/*-- Footer */
+
+#footer {
+  margin: 3%;
+  text-align: center;
+  background-color: #fff;  
+}
+
+.ft-icon {
+  margin: 15px ;
+}
+
+.cta-p {
+  font-size: 50px;
+  color: #fff;
 }
