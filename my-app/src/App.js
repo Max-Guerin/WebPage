@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <div className="main-app">
         <header className="App-header">
-          <section id="navbar">
+          <section className="coloured-section" id="navbar">
             <div className="container-fluid">
               <nav className="navbar navbar-expand-xl navbar-dark">
                 <a className="navbar-brand" href="">
@@ -57,11 +57,11 @@ function App() {
 
         {/*-- Title */}
         <div className="main-body">
-          <section id="title">
+          <section className="coloured-section" id="title">
             <div className="container-fluid">
               <div className="row">
                 <div className="col-lg-6">
-                  <h1>Meet new and interesting dogs nearby.</h1>
+                  <h1 className="big-heading">Meet new and interesting dogs nearby.</h1>
                   <button
                     type="button"
                     className="btn btn-lg btn-dark dl-button"
@@ -92,24 +92,24 @@ function App() {
 
           {/*-- Features */}
 
-          <section id="features">
+          <section className="white-section" id="features">
             <div className="container-fluid">
               <div className="row">
                 <div className="col-lg-4">
                   <i className="feature-icon fas fa-check-circle fa-5x"></i>
-                  <h3>Easy to use.</h3>
+                  <h3 className="feature-title">Easy to use.</h3>
                   <p>So easy to use, even your dog could do it.</p>
                 </div>
 
                 <div className="col-lg-4">
                   <i className="feature-icon fas fa-bullseye fa-5x"></i>
-                  <h3>Elite Clientele</h3>
+                  <h3 className="feature-title">Elite Clientele</h3>
                   <p>We have all the dogs, the greatest dogs.</p>
                 </div>
 
                 <div className="col-lg-4">
                   <i className="feature-icon fas fa-heart fa-5x"></i>
-                  <h3>Guaranteed to work.</h3>
+                  <h3 className="feature-title">Guaranteed to work.</h3>
                   <p>Find the love of your dog's life or your money back.</p>
                 </div>
               </div>
@@ -118,7 +118,7 @@ function App() {
 
           {/*-- Testimonials */}
 
-          <section id="testimonials">
+          <section className="coloured-section" id="testimonials">
             <div
               id="testimonial-carousel"
               className="carousel slide"
@@ -126,7 +126,7 @@ function App() {
             >
               <div className="carousel-inner">
                 <div className="carousel-item active testimonial-text">
-                  <h2>
+                  <h2 className="test-text">
                     I no longer have to sniff other dogs for love. I've found
                     the hottest Corgi on TinDog. Woof.
                   </h2>
@@ -138,7 +138,7 @@ function App() {
                   <em>Pebbles, New York</em>
                 </div>
                 <div className="carousel-item testimonial-text">
-                  <h2>
+                  <h2 className="test-text">
                     My dog used to be so lonely, but with TinDog's help, they've
                     found the love of their life. I think.
                   </h2>
@@ -171,7 +171,7 @@ function App() {
 
           {/*-- Press */}
 
-          <section id="press">
+          <section  className="coloured-section" id="press">
             <img
               className="press-logo"
               src="./images/techcrunch.png"
@@ -192,18 +192,18 @@ function App() {
 
           {/* Pricing */}
 
-          <section id="pricing" className="text-center">
-            <h2>A Plan for Every Dog's Needs</h2>
+          <section className="white-section"id="pricing" className="text-center">
+            <h2 className="section-heading">A Plan for Every Dog's Needs</h2>
             <p>Simple and affordable price plans for your and your dog.</p>
 
             <div class="row text-center">
               <div className="pricing-column col-lg-4 col-md-6">
                 <div class="card">
                   <div class="card-header">
-                    <h3>Chihuahua</h3>
+                    <h3 className="dog-type">Chihuahua</h3>
                   </div>
                   <div className="card-body">
-                    <h2>Free</h2>
+                    <h2 className="price-text">Free</h2>
                     <p>5 Matches Per Day</p>
                     <p>10 Messages Per Day</p>
                     <p>Unlimited App Usage</p>
@@ -221,10 +221,10 @@ function App() {
               <div className="pricing-column col-lg-4 col-md-6">
                 <div class="card">
                   <div class="card-header">
-                    <h3>Chihuahua</h3>
+                    <h3 className="dog-type">Labrador</h3>
                   </div>
                   <div className="card-body">
-                    <h2>Free</h2>
+                    <h2 className="price-text">Free</h2>
                     <p>5 Matches Per Day</p>
                     <p>10 Messages Per Day</p>
                     <p>Unlimited App Usage</p>
@@ -242,10 +242,10 @@ function App() {
               <div className="pricing-column col-lg-4">
                 <div class="card">
                   <div class="card-header">
-                    <h3>Mastiff</h3>
+                    <h3 className="dog-type">Mastiff</h3>
                   </div>
                   <div class="card-body">
-                    <h2>$99 / mo</h2>
+                    <h2 className="price-text">$99 / mo</h2>
                     <p>Pirority Listing</p>
                     <p>Unlimited Matches</p>
                     <p>Unlimited Messages</p>
@@ -266,8 +266,8 @@ function App() {
 
           {/* Call to Action */}
 
-          <section id="cta">
-            <h3 className="cta-p">
+          <section className="coloured-section" id="cta">
+            <h3 className="big-heading">
               Find the True Love of Your Dog's Life Today.
             </h3>
             <button className="dl-btn btn bt-lg btn-dark" type="button">
