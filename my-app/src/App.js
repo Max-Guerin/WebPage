@@ -66,13 +66,13 @@ function App() {
                     type="button"
                     className="btn btn-lg btn-dark dl-button"
                   >
-                  <i className="fab fa-apple"></i> Download
+                    <i className="fab fa-apple"></i> Download
                   </button>
                   <button
                     type="button"
                     className="btn btn-lg btn-outline-light dl-button"
                   >
-                    <i class="fab fa-google-play"></i> Download
+                    <i className="fab fa-google-play"></i> Download
                   </button>
                 </div>
 
@@ -96,7 +96,7 @@ function App() {
             <div className="container-fluid">
               <div className="row">
                 <div className="col-lg-4">
-                  <i class="feature-icon fas fa-check-circle fa-5x"></i>
+                  <i className="feature-icon fas fa-check-circle fa-5x"></i>
                   <h3>Easy to use.</h3>
                   <p>So easy to use, even your dog could do it.</p>
                 </div>
@@ -119,54 +119,134 @@ function App() {
           {/*-- Testimonials */}
 
           <section id="testimonials">
-            <h2>
-              I no longer have to sniff other dogs for love. I've found the
-              hottest Corgi on TinDog. Woof.
-            </h2>
-            <img src="./images/dog-img.jpg" alt="dog-profile" />
-            <em>Pebbles, New York</em>
+            <div
+              id="testimonial-carousel"
+              className="carousel slide"
+              data-interval="false"
+            >
+              <div className="carousel-inner">
+                <div className="carousel-item active testimonial-text">
+                  <h2>
+                    I no longer have to sniff other dogs for love. I've found
+                    the hottest Corgi on TinDog. Woof.
+                  </h2>
+                  <img
+                    className="test-img"
+                    src="./images/dog-img.jpg"
+                    alt="dog-profile"
+                  />
+                  <em>Pebbles, New York</em>
+                </div>
+                <div className="carousel-item testimonial-text">
+                  <h2>
+                    My dog used to be so lonely, but with TinDog's help, they've
+                    found the love of their life. I think.
+                  </h2>
+                  <img
+                    className="test-img"
+                    src="images/lady-img.jpg"
+                    alt="lady-profile"
+                  />
+                  <em>Beverly, Illinois</em>
+                </div>
+              </div>
+              <a
+                className=" test-control carousel-control-prev"
+                href="#testimonial-carousel"
+                role="button"
+                data-slide="prev"
+              >
+                <span className="carousel-control-prev-icon"></span>
+              </a>
+              <a
+                className=" test-control carousel-control-next"
+                href="#testimonial-carousel"
+                role="button"
+                data-slide="next"
+              >
+                <span className="carousel-control-next-icon"></span>
+              </a>
+            </div>
           </section>
-
-          {/*-- <h2 className="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
-            <img className="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
-            <em>Beverly, Illinois</em> */}
 
           {/*-- Press */}
 
           <section id="press">
-            <img src="./images/techcrunch.png" alt="tc-logo" />
-            <img src="./images/tnw.png" alt="tnw-logo" />
-            <img src="./images/bizinsider.png" alt="biz-insider-logo" />
-            <img src="./images/mashable.png" alt="mashable-logo" />
+            <img
+              className="press-logo"
+              src="./images/techcrunch.png"
+              alt="tc-logo"
+            />
+            <img className="press-logo" src="./images/tnw.png" alt="tnw-logo" />
+            <img
+              className="press-logo"
+              src="./images/bizinsider.png"
+              alt="biz-insider-logo"
+            />
+            <img
+              className="press-logo"
+              src="./images/mashable.png"
+              alt="mashable-logo"
+            />
           </section>
 
           {/* Pricing */}
 
-          <section id="pricing">
+          <section id="pricing" className="text-center">
             <h2>A Plan for Every Dog's Needs</h2>
             <p>Simple and affordable price plans for your and your dog.</p>
 
-            <h3>Chihuahua</h3>
-            <h2>Free</h2>
-            <p>5 Matches Per Day</p>
-            <p>10 Messages Per Day</p>
-            <p>Unlimited App Usage</p>
-            <button type="button">Sign Up</button>
-
-            <h3>Labrador</h3>
-            <h2>$49 / mo</h2>
-            <p>Unlimited Matches</p>
-            <p>Unlimited Messages</p>
-            <p>Unlimited App Usage</p>
-            <button type="button">Sign Up</button>
-
-            <h3>Mastiff</h3>
-            <h2>$99 / mo</h2>
-            <p>Pirority Listing</p>
-            <p>Unlimited Matches</p>
-            <p>Unlimited Messages</p>
-            <p>Unlimited App Usage</p>
-            <button type="button">Sign Up</button>
+            <div class="row text-center">
+              <div className="pricing-column col-lg-4 col-md-6">
+                <div class="card">
+                  <div class="card-header">
+                    <h3>Chihuahua</h3>
+                  </div>
+                  <div className="card-body">
+                    <h2>Free</h2>
+                    <p>5 Matches Per Day</p>
+                    <p>10 Messages Per Day</p>
+                    <p>Unlimited App Usage</p>
+                    <div className="btn-layout">
+                    <button type="button" className="btn btn-outline-dark btn-lg btn-block">Sign Up</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="pricing-column col-lg-4 col-md-6">
+                <div class="card">
+                  <div class="card-header">
+                    <h3>Chihuahua</h3>
+                  </div>
+                  <div className="card-body">
+                    <h2>Free</h2>
+                    <p>5 Matches Per Day</p>
+                    <p>10 Messages Per Day</p>
+                    <p>Unlimited App Usage</p>
+                    <div className="btn-layout">
+                    <button type="button" className="btn btn-dark btn-lg btn-block">Sign Up</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="pricing-column col-lg-4">
+                <div class="card">
+                  <div class="card-header">
+                    <h3>Mastiff</h3>
+                  </div>
+                  <div class="card-body">
+                    <h2>$99 / mo</h2>
+                    <p>Pirority Listing</p>
+                    <p>Unlimited Matches</p>
+                    <p>Unlimited Messages</p>
+                    <p>Unlimited App Usage</p>
+                    <div className="btn-layout">
+                    <button type="button" className="btn btn-dark btn-lg btn-block">Sign Up</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
 
           {/* Call to Action */}
