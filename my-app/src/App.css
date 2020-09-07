@@ -5,6 +5,7 @@
 #title {
   background-color: #ff4c68;   
   padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .navbar {
@@ -58,7 +59,8 @@ p {
 }
 
 .title-img {  
-  width: 80%;
+  position: absolute;
+  
 }
 
 .rotated {
@@ -66,11 +68,26 @@ p {
   margin-left: 16rem;
 }
 
+@media (max-width: 1100px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-img {
+    position: static;
+    transform: rotate(0);    
+  }
+}
+
+
+
 /*-- Features */
 
 #features {
+  position: relative;
   text-align: center;
   padding: 7% 5%;   
+  background-color: #fff;
   }
 
 .feature-icon {
@@ -131,3 +148,8 @@ p {
   height: 100%;
 }
 
+/*-- Call to Action */
+
+#cta {
+  
+}
