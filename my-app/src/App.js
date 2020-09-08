@@ -196,7 +196,7 @@ function App() {
             <h2 className="section-heading">A Plan for Every Dog's Needs</h2>
             <p>Simple and affordable price plans for your and your dog.</p>
 
-            <div class="row text-center">
+            <div class="row">
               <div className="pricing-column col-lg-4 col-md-6">
                 <div class="card">
                   <div class="card-header">
@@ -206,8 +206,10 @@ function App() {
                     <h2 className="price-text">Free</h2>
                     <p>5 Matches Per Day</p>
                     <p>10 Messages Per Day</p>
-                    <p>Unlimited App Usage</p>
-                    <div className="btn-layout">
+                    <p>Unlimited App Usage</p>                    
+                  </div>
+                  <div className="card-footer">
+                  <div className="btn-layout">
                       <button
                         type="button"
                         className="btn btn-outline-dark btn-lg btn-block"
@@ -215,6 +217,7 @@ function App() {
                         Sign Up
                       </button>
                     </div>
+
                   </div>
                 </div>
               </div>
@@ -227,8 +230,10 @@ function App() {
                     <h2 className="price-text">Free</h2>
                     <p>5 Matches Per Day</p>
                     <p>10 Messages Per Day</p>
-                    <p>Unlimited App Usage</p>
-                    <div className="btn-layout">
+                    <p>Unlimited App Usage</p>                    
+                  </div>
+                  <div className="card-footer">
+                  <div className="btn-layout">
                       <button
                         type="button"
                         className="btn btn-dark btn-lg btn-block"
@@ -236,7 +241,7 @@ function App() {
                         Sign Up
                       </button>
                     </div>
-                  </div>
+                    </div>
                 </div>
               </div>
               <div className="pricing-column col-lg-4">
@@ -249,8 +254,10 @@ function App() {
                     <p>Pirority Listing</p>
                     <p>Unlimited Matches</p>
                     <p>Unlimited Messages</p>
-                    <p>Unlimited App Usage</p>
-                    <div className="btn-layout">
+                    <p>Unlimited App Usage</p>                    
+                  </div>
+                  <div className="card-footer">
+                  <div className="btn-layout">
                       <button
                         type="button"
                         className="btn btn-dark btn-lg btn-block"

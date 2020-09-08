@@ -121,8 +121,6 @@ p {
 
 /*-- Testimonials */
 
-
-
 .test-img {
   width: 10%;
   border-radius: 100%;
@@ -148,6 +146,7 @@ p {
 
 #pricing {
   padding: 100px;
+  
 }
 
 .pricing-column {
@@ -156,7 +155,13 @@ p {
 
 .card {
   height: 100%;
+  position: relative;
 }
+
+.btn-layout {
+ 
+}
+
 
 /*-- Call to Action */
 
