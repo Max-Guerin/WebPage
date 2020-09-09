@@ -1,59 +1,14 @@
 import React from "react";
 import "./App.css";
+import { Header } from "./layout/header";
+import { Footer } from "./layout/footer";
+import { Card } from "./Card";
 
 function App() {
   return (
     <div className="App">
       <div className="main-app">
-        <header className="App-header">
-          <section className="coloured-section" id="navbar">
-            <div className="container-fluid">
-              <nav className="navbar navbar-expand-xl navbar-dark">
-                <a className="navbar-brand" href="">
-                  Website
-                </a>
-
-                <button
-                  className="navbar-toggler"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#navbarTogglerDemo02"
-                  aria-controls="navbarTogglerDemo02"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span className="navbar-toggler-icon"></span>
-                </button>
-
-                <div
-                  className=" collapse navbar-collapse"
-                  id="navbarTogglerDemo02"
-                >
-                  <ul className="navbar-nav ml-auto">
-                    <li className="nav-item">
-                      <a className="nav-link" href="#footer">
-                        {" "}
-                        Contact
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="#pricing">
-                        {" "}
-                        Pricing
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="#cta">
-                        {" "}
-                        Download
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-            </div>
-          </section>
-        </header>
+        <Header />
 
         {/*-- Title */}
         <div className="main-body">
@@ -61,7 +16,9 @@ function App() {
             <div className="container-fluid">
               <div className="row">
                 <div className="col-lg-6">
-                  <h1 className="big-heading">Meet new and interesting dogs nearby.</h1>
+                  <h1 className="big-heading">
+                    Meet new and interesting dogs nearby.
+                  </h1>
                   <button
                     type="button"
                     className="btn btn-lg btn-dark dl-button"
@@ -171,7 +128,7 @@ function App() {
 
           {/*-- Press */}
 
-          <section  className="coloured-section" id="press">
+          <section className="coloured-section" id="press">
             <img
               className="press-logo"
               src="./images/techcrunch.png"
@@ -191,83 +148,23 @@ function App() {
           </section>
 
           {/* Pricing */}
-
-          <section className="white-section"id="pricing" className="text-center">
+          <section
+            className="white-section"
+            id="pricing"
+            className="text-center"
+          >
             <h2 className="section-heading">A Plan for Every Dog's Needs</h2>
             <p>Simple and affordable price plans for your and your dog.</p>
-
             <div class="row">
-              <div className="pricing-column col-lg-4 col-md-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h3 className="dog-type">Chihuahua</h3>
-                  </div>
-                  <div className="card-body">
-                    <h2 className="price-text">Free</h2>
-                    <p>5 Matches Per Day</p>
-                    <p>10 Messages Per Day</p>
-                    <p>Unlimited App Usage</p>                    
-                  </div>
-                  <div className="card-footer">
-                  <div className="btn-layout">
-                      <button
-                        type="button"
-                        className="btn btn-outline-dark btn-lg btn-block"
-                      >
-                        Sign Up
-                      </button>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-              <div className="pricing-column col-lg-4 col-md-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h3 className="dog-type">Labrador</h3>
-                  </div>
-                  <div className="card-body">
-                    <h2 className="price-text">Free</h2>
-                    <p>5 Matches Per Day</p>
-                    <p>10 Messages Per Day</p>
-                    <p>Unlimited App Usage</p>                    
-                  </div>
-                  <div className="card-footer">
-                  <div className="btn-layout">
-                      <button
-                        type="button"
-                        className="btn btn-dark btn-lg btn-block"
-                      >
-                        Sign Up
-                      </button>
-                    </div>
-                    </div>
-                </div>
-              </div>
-              <div className="pricing-column col-lg-4">
-                <div class="card">
-                  <div class="card-header">
-                    <h3 className="dog-type">Mastiff</h3>
-                  </div>
-                  <div class="card-body">
-                    <h2 className="price-text">$99 / mo</h2>
-                    <p>Pirority Listing</p>
-                    <p>Unlimited Matches</p>
-                    <p>Unlimited Messages</p>
-                    <p>Unlimited App Usage</p>                    
-                  </div>
-                  <div className="card-footer">
-                  <div className="btn-layout">
-                      <button
-                        type="button"
-                        className="btn btn-dark btn-lg btn-block"
-                      >
-                        Sign Up
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <Card dogType="Chihuahua" matches="5" messages="10" />
+              <Card dogType="Labrador" matches="5" messages="10" />
+              <Card
+                dogType="Mastiff"
+                price="$99"
+                priority={true}
+                matches="Unlimited"
+                messages="Unlimited"
+              />
             </div>
           </section>
 
@@ -287,15 +184,7 @@ function App() {
         </div>
         {/* Footer */}
 
-        <footer id="footer">
-          <p>
-            <i class="fab fa-twitter ft-icon"></i>{" "}
-            <i class="fab fa-facebook-f ft-icon"></i>{" "}
-            <i class="fab fa-instagram-square ft-icon"></i>{" "}
-            <i class="fas fa-envelope ft-icon"></i>
-          </p>
-          <p>© Copyright 2018 TinDog</p>
-        </footer>
+        <Footer />
       </div>
     </div>
   );
