@@ -1,59 +1,14 @@
 import React from "react";
 import "./App.css";
+import {Header} from "./layout/header"
+import {Footer} from "./layout/footer"
 
 function App() {
   return (
     <div className="App">
       <div className="main-app">
-        <header className="App-header">
-          <section className="coloured-section" id="navbar">
-            <div className="container-fluid">
-              <nav className="navbar navbar-expand-xl navbar-dark">
-                <a className="navbar-brand" href="">
-                  Website
-                </a>
-
-                <button
-                  className="navbar-toggler"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#navbarTogglerDemo02"
-                  aria-controls="navbarTogglerDemo02"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span className="navbar-toggler-icon"></span>
-                </button>
-
-                <div
-                  className=" collapse navbar-collapse"
-                  id="navbarTogglerDemo02"
-                >
-                  <ul className="navbar-nav ml-auto">
-                    <li className="nav-item">
-                      <a className="nav-link" href="#footer">
-                        {" "}
-                        Contact
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="#pricing">
-                        {" "}
-                        Pricing
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="#cta">
-                        {" "}
-                        Download
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-            </div>
-          </section>
-        </header>
+        
+<Header />
 
         {/*-- Title */}
         <div className="main-body">
@@ -287,15 +242,7 @@ function App() {
         </div>
         {/* Footer */}
 
-        <footer id="footer">
-          <p>
-            <i class="fab fa-twitter ft-icon"></i>{" "}
-            <i class="fab fa-facebook-f ft-icon"></i>{" "}
-            <i class="fab fa-instagram-square ft-icon"></i>{" "}
-            <i class="fas fa-envelope ft-icon"></i>
-          </p>
-          <p>© Copyright 2018 TinDog</p>
-        </footer>
+<Footer />
       </div>
     </div>
   );
