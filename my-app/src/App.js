@@ -3,7 +3,6 @@ import "./App.css";
 import { Header } from "./layout/header";
 import { Footer } from "./layout/footer";
 import { Card } from "./Card";
-import { Card_example } from "./Card_example";
 
 function App() {
   return (
